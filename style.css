@@ -2,245 +2,265 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: green;
-}
-.card {
   position: absolute;
+  background-color: green;
 }
-/* cards */
-#card1 {
+.card1 {
   width: 12rem;
   height: 17rem;
+  border-radius: 1rem;
   background-color: white;
-  border-radius: 10px;
-  top: 17rem;
-  left: 3rem;
+  top: 15rem;
+  left: 4rem;
 }
-#card2 {
+.card2 {
   width: 12rem;
   height: 17rem;
+  border-radius: 1rem;
   background-color: white;
-  border-radius: 10px;
-  top: 17rem;
+  top: 15rem;
   left: 20rem;
+  z-index: -1;
 }
-#card3 {
+.card3 {
   width: 12rem;
   height: 17rem;
+  border-radius: 1rem;
   background-color: white;
-  border-radius: 10px;
-  top: 17rem;
-  left: 37rem;
+  top: 15rem;
+  left: 36rem;
 }
-#card4 {
+.card4 {
   width: 12rem;
   height: 17rem;
+  border-radius: 1rem;
   background-color: white;
-  border-radius: 10px;
-  top: 17rem;
-  left: 54rem;
+  top: 15rem;
+  left: 52rem;
+  z-index: -1;
 }
-.circle {
-  position: absolute;
-}
-/* heart */
-#triangle1 {
+.heart {
   width: 0;
   height: 0;
+  position: absolute;
+  border-top: 2rem solid red;
+  border-right: 2rem solid white;
+  border-left: 2rem solid white;
+  top: 24rem;
+  left: 8rem;
+}
+.heart::before {
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
   background-color: red;
+  position: absolute;
+  top: -3.6rem;
+  left: -2.1rem;
+}
+.heart::after {
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -3.6rem;
+  left: -0.1rem;
+}
+#content1 {
+  font-size: 1.5rem;
+  top: 15.3rem;
+  left: 4.5rem;
+  color: red;
+  background-color: white;
+}
+#content2 {
+  font-size: 1.5rem;
+  top: 29.7rem;
+  left: 13.5rem;
+  color: red;
+  background-color: white;
+}
+.spead {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 2rem solid white;
+  border-bottom: 2rem solid black;
+  border-right: 2rem solid white;
+  top: 22rem;
+  left: 24rem;
+}
+.spead::before {
+  content: "";
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  top: 1.4rem;
+  left: -0.13rem;
+}
+.spead::after {
+  content: "";
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  top: 1.4rem;
+  left: -2.1rem;
+}
+.rectangle1 {
+  width: 2rem;
+  height: 3.5rem;
+  position: absolute;
+  background-color: black;
+  top: 23.4rem;
+  left: 25rem;
+  z-index: -1;
+}
+
+.rectangle1::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  top: 1.3rem;
+  left: 1.2rem;
+}
+.rectangle1::after {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  top: 1.3rem;
+  left: -1.5rem;
+}
+#content3 {
+  font-size: 1.5rem;
+  top: 15.3rem;
+  left: 20.4rem;
+  color: black;
+  background-color: white;
+}
+#content4 {
+  font-size: 1.5rem;
+  top: 29.8rem;
+  left: 29.5rem;
+  color: black;
+  background-color: white;
+}
+.diamond {
+  width: 0;
+  height: 0;
+  position: absolute;
   border-top: 2.1rem solid red;
   border-left: 2.1rem solid white;
   border-right: 2.1rem solid white;
   top: 24rem;
-  left: 6.6rem;
+  left: 40rem;
 }
-#circle1 {
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: red;
-  border-radius: 50%;
-  top: 22.5rem;
-  left: 6.58rem;
-}
-#circle2 {
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: red;
-  border-radius: 50%;
-  top: 22.5rem;
-  left: 8.61rem;
-}
-#content1 {
-  top: 17.5rem;
-  left: 3.4rem;
-  background-color: white;
-  color: red;
-  font-size: 1.5rem;
-}
-#content2 {
-  top: 32rem;
-  left: 12.6rem;
-  background-color: white;
-  color: red;
-  font-size: 1.5rem;
-}
-/* spade */
-#circle3 {
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: black;
-  border-radius: 50%;
-  top: 24.4rem;
-  left: 23.83rem;
-  z-index: 1;
-}
-#circle4 {
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: black;
-  border-radius: 50%;
-  top: 24.4rem;
-  left: 25.77rem;
-  z-index: 2;
-}
-#triangle2 {
+.diamond::before {
+  content: "";
   width: 0;
   height: 0;
-  border-bottom: 2rem solid black;
-  border-left: 2rem solid white;
-  border-right: 2rem solid white;
-  top: 23rem;
-  left: 23.9rem;
-}
-#rectangle1 {
-  width: 1.6rem;
-  height: 2.8rem;
-  background-color: black;
-  top: 25rem;
-  left: 25rem;
-}
-#circle5 {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 50%;
-  top: 25.8rem;
-  left: 26rem;
-}
-#circle6 {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 50%;
-  top: 25.7rem;
-  left: 23.9rem;
-}
-#content3 {
-  top: 32rem;
-  left: 29.6rem;
-  background-color: white;
-  font-size: 1.5rem;
-}
-#content4 {
-  top: 18rem;
-  left: 20.5rem;
-  background-color: white;
-  font-size: 1.5rem;
-}
-/* diamond */
-#diamond1 {
-  width: 0;
-  height: 0;
-  border-left: 2rem solid white;
-  border-right: 2rem solid white;
-  border-top: 2rem solid red;
-  top: 26.3rem;
-  left: 41rem;
-}
-#diamond2 {
-  width: 0;
-  height: 0;
-  border-left: 2rem solid white;
-  border-right: 2rem solid white;
-  border-bottom: 2rem solid red;
-  top: 24.3rem;
-  left: 41rem;
+  position: absolute;
+  border-left: 2.1rem solid white;
+  border-right: 2.1rem solid white;
+  border-bottom: 2.1rem solid red;
+  top: -4.2rem;
+  left: -2rem;
 }
 #content5 {
-  top: 32rem;
-  left: 46.6rem;
-  background-color: white;
-  color: red;
   font-size: 1.5rem;
+  top: 15.3rem;
+  left: 36.4rem;
+  color: red;
+  background-color: white;
 }
 #content6 {
-  top: 18rem;
-  left: 37.5rem;
-  background-color: white;
-  color: red;
   font-size: 1.5rem;
-}
-/* club  */
-#circle7 {
-  width: 2rem;
-  height: 2rem;
-  background-color: black;
-  border-radius: 50%;
-  top: 24.5em;
-  left: 58.3rem;
-  z-index: 3;
-}
-#circle8 {
-  width: 2rem;
-  height: 2rem;
-  background-color: black;
-  border-radius: 50%;
-  top: 24.5rem;
-  left: 60rem;
-  z-index: 4;
-}
-#rectangle2 {
-  width: 1.5rem;
-  height: 2rem;
-  background-color: black;
-  top: 25.7rem;
-  left: 59.4rem;
-}
-#circle9 {
-  width: 2rem;
-  height: 2rem;
-  background-color: black;
-  border-radius: 50%;
-  top: 23rem;
-  left: 59.2rem;
-}
-#circle10 {
-  width: 1.5rem;
-  height: 1.5rem;
+  top: 29.9rem;
+  left: 45.7rem;
+  color: red;
   background-color: white;
-  border-radius: 50%;
-  top: 26.1rem;
-  left: 58.6rem;
 }
-#circle11 {
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: white;
+.club {
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 50%;
-  top: 26.1rem;
-  left: 60.2rem;
+  position: absolute;
+  background-color: black;
+  top: 22rem;
+  left: 57rem;
+}
+.club::before {
+  content: "";
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  top: 1.6rem;
+  left: 1rem;
+}
+.club::after {
+  content: "";
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  top: 1.6rem;
+  left: -1rem;
+}
+.rectangle2 {
+  width: 2rem;
+  height: 3rem;
+  position: absolute;
+  background-color: black;
+  top: 24.3rem;
+  left: 57.1rem;
+  z-index: -1;
+}
+.rectangle2::before {
+  content: "";
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  top: 1rem;
+  left: 1.1rem;
+}
+.rectangle2::after {
+  content: "";
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+  top: 1rem;
+  left: -1.4rem;
 }
 #content7 {
-  top: 18rem;
-  left: 54.3rem;
-  background-color: white;
-  color: black;
   font-size: 1.5rem;
+  top: 15.5rem;
+  left: 52.5rem;
+  color: black;
+  background-color: white;
 }
 #content8 {
-  top: 32rem;
-  left: 63.3rem;
-  background-color: white;
-  color: black;
   font-size: 1.5rem;
+  top: 30rem;
+  left: 61.5rem;
+  color: black;
+  background-color: white;
 }
